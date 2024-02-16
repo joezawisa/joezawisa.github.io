@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Joe Zawisa's Hobby Projects">
+        <meta name="keywords" content="Joe, Joseph, Zawisa, Joe Zawisa, Joseph Zawisa, Hobbies">
+        <meta name="author" content="Joseph Zawisa">
+        <title>Joe Zawisa - Hobbies</title>
+        <link rel="icon" type="image/png" hrsef="/assets/images/memoji.png">
+        <link rel="stylesheet" href="/assets/stylesheets/main.css">
+        <script type="text/javascript" src="/assets/scripts/main.js"></script>
+    </head>
+    <body>
+        <nav class="topnav" id="navbar">
+            <ul class="unstyled">
+                <li class="topnav-item"><a href="/">
+                    <img id="logo" src="/assets/images/memoji.png">
+                    <span>Joe Zawisa</span>
+                </a></li>
+                <li class="topnav-item"><a href="/high-school">High School</a></li>
+                <li class="topnav-item"><a href="/college">College</a></li>
+                <li class="topnav-item active"><a href="/hobbies">Hobbies</a></li>
+                <li class="topnav-item icon">
+                    <a href="javascript:expandNavigation();">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Hobbies</h1>
+            <p>These are some of the projects I've done just for fun.</p>
+        </header>
+        <main>
+            <section id="cnc-machine" class="detail">
+                <h2 class="title">CNC Machine</h2>
+                <iframe class="visual" src="https://www.youtube.com/embed/GgNMVx0i6gg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">
+                    <p>Inspired by the Hurco CNC mill in my high school's automotive laboratory, I decided to build my own desktop CNC machine. I took responsibility for the electronics and programming, and my dad helped with the fabrication.</p>
+                    <p>The machine uses stepper motors to drive lead screws on each of its three axes. These stepper motors are controlled by an Arduino running GRBL, and the Arduino is controlled by a computer running a G-code sender. To stream G-code to the machine, I typically use Universal Gcode Sender (UGS). Initially, I intended to use the machine for CNC milling, so I installed a high-speed spindle for carving. More recently, I installed a laser next to the spindle, and the machine can now be used for laser engraving. For design and G-code generation in milling projects I usually use Easel from Inventables, and for laser engraving projects I use LaserGRBL.</p>
+                    <ul class="unstyled">
+                        <li><a href="https://www.arduino.cc">View the Arduino website</a></li>
+                        <li><a href="https://github.com/gnea/grbl">View the GRBL project</a></li>
+                        <li><a href="https://winder.github.io/ugs_website/">View the UGS website</a></li>
+                        <li><a href="https://www.inventables.com/technologies/easel">View the Easel website</a></li>
+                        <li><a href="https://lasergrbl.com">View the LaserGRBL website</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="smiley" class="detail">
+                <h2 class="title">Smiley</h2>
+                <img class="visual" id="smiley-image">
+                <div class="text">
+                    <p>The smiley was my very first project on the CNC machine. I learned the basics of G-code and handwrote the path to carve this smiley face. I began with a pencil sketching on paper to test whether the machine could trace 2D paths correctly. Once I verified that the machine could execute G-code adequately, I began testing with a spindle to carve wood. This smiley face was the image I used throughout the construction of the machine to test its functionality.</p>
+                </div>
+            </section>
+            <section id="tie-fighter-coaster" class="detail">
+                <h2 class="title">TIE Fighter Coaster</h2>
+                <img class="visual" id="tie-fighter-image">
+                <div class="text">
+                    <p>My first serious project on the CNC machine was a Star Wars TIE fighter beverage coaster. You may notice that this TIE fighter's wings are angled at the top and bottom. That's because this is Darth Vader's TIE fighter!</p>
+                    <p>This was a simple project. I edited an image of Darth Vader's TIE fighter I found online and imported it into Easel to generate G-code for the CNC machine.</p>
+                </div>
+            </section>
+            <section id="euchre-cubes" class="detail">
+                <h2 class="title">Euchre Cubes</h2>
+                <img class="visual" id="euchre-cube-image">
+                <div class="text">
+                    <p>Do you ever lose track of trump when playing Euchre? Not anymore! To keep track, just turn one of these cubes to the trump suit and you can look at it later for a reminder.</p>
+                    <p>For this project, I found images of each card suit and a joker. I imported these into Easel and generated G-code to carve each side of the cube. I tried several different styles for these cubes - different color schemes, different types of wood, and both rounded and unrounded corners.</p>
+                </div>
+            </section>
+            <section id="mandalorian-ornament" class="detail">
+                <h2 class="title">Mandalorian Ornament</h2>
+                <img class="visual" src="/assets/images/hobbies/mandalorian-ornament/mandalorian-ornament.jpg" alt="Picture of an ornament with the Mandalorian on it">
+                <div class="text">
+                    <p>As a Christmas gift, I made a Mandlorian ornament with my CNC machine. First, I found a Mandalorian image online and edited it to be black and white. Then I imported the image into Easel and generated G-code for the CNC machine. After using the CNC machine to carve the ornament, I stained the wood and painted the background white.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://github.com/joezawisa"><img src="/assets/images/GitHub-Mark-120px-plus.png"></a>
+            <a href="https://www.linkedin.com/in/joseph-zawisa/"><img src="/assets/images/LI-In-Bug.png"></a>
+            <p>Copyright &copy; Joseph Zawisa 2021</p>
+        </footer>
+        <script>
+            imageCarousel("smiley-image", [
+                {
+                    source: "/assets/images/hobbies/smiley/smiley-pencil.jpeg",
+                    description: "Picture of a CNC machine drawing a smiley face with a pencil"
+                },
+                {
+                    source: "/assets/images/hobbies/smiley/smiley-wood-attempts.jpeg",
+                    description: "Failed attempts at carving a smiley face out of wood"
+                },
+                {
+                    source: "/assets/images/hobbies/smiley/smiley-wood-success.jpg",
+                    description: "Succeeded attempts at carving a smiley face out of wood"
+                }
+            ]);
+            imageCarousel("tie-fighter-image", [
+                {
+                    source: "/assets/images/hobbies/tie-fighter-coaster/coaster-in-progress.jpg",
+                    description: "Picture of a CNC machine carving an image of a TIE fighter"
+                },
+                {
+                    source: "/assets/images/hobbies/tie-fighter-coaster/TIE-fighter.jpeg",
+                    description: "Picture of a beverage coaster on a CNC machine"
+                },
+                {
+                    source: "/assets/images/hobbies/tie-fighter-coaster/finished-coaster.jpg",
+                    description: "Picture of a TIE fighter carved into a beverage coaster"
+                }
+            ]);
+            imageCarousel("euchre-cube-image", [
+                {
+                    source: "/assets/images/hobbies/euchre-cubes/clubs-cube.jpeg",
+                    description: "Picture of a cube with a clubs icon carved into its side"
+                },
+                {
+                    source: "/assets/images/hobbies/euchre-cubes/painted-cube.jpg",
+                    description: "Picture of a painted Euchre cube"
+                },
+                {
+                    source: "/assets/images/hobbies/euchre-cubes/walnut-cube.jpg",
+                    description: "Picture of a Euchre cube made with walnut wood and rounded edges"
+                }
+            ]);
+        </script>
+    </body>
+</html>

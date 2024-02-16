@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Joe Zawisa's College Projects">
+        <meta name="keywords" content="Joe, Joseph, Zawisa, Joe Zawisa, Joseph Zawisa, College">
+        <meta name="author" content="Joseph Zawisa">
+        <title>Joe Zawisa - College</title>
+        <link rel="icon" type="image/png" href="/assets/images/memoji.png">
+        <link rel="stylesheet" href="/assets/stylesheets/main.css">
+        <script type="text/javascript" src="/assets/scripts/main.js"></script>
+    </head>
+    <body>
+        <nav class="topnav" id="navbar">
+            <ul class="unstyled">
+                <li class="topnav-item"><a href="/">
+                    <img id="logo" src="/assets/images/memoji.png">
+                    <span>Joe Zawisa</span>
+                </a></li>
+                <li class="topnav-item"><a href="/high-school">High School</a></li>
+                <li class="topnav-item active"><a href="/college">College</a></li>
+                <li class="topnav-item"><a href="/hobbies">Hobbies</a></li>
+                <li class="topnav-item icon">
+                    <a href="javascript:expandNavigation();">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>College</h1>
+            <p>These are some projects I completed while attending the University of Michigan.</p>
+        </header>
+        <main>
+            <section id="wind-turbine" class="detail">
+                <h2 class="title">Wind Turbine</h2>
+                <iframe class="visual" src="https://www.youtube.com/embed/IwJ271XPsek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">
+                    <p>In my first year, I took an <i>Introduction to Engineering</i> course with a focus on wind energy. This course taught me about mechanical and electrical concepts that relate to wind turbines.</p>
+                    <p>For the final project, I worked in a group of four students to build a Savonius wind turbine. We gave several presentations throughout the semester and designed, built, and tested our turbine. To conclude the project, we submitted a final report detailing our design, the prototype we built, recommendations for a production version of the turbine, and lessons learned.</p>
+                    <ul class="unstyled">
+                        <li><a href="/assets/files/college/wind-turbine/isometric-model.pdf">View our CAD model</a></li>
+                        <li><a href="/assets/files/college/wind-turbine/prototype-dimensions.pdf">View our dimensional layout</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="facial-recognition" class="detail">
+                <h2 class="title">Facial Recognition</h2>
+                <img class="visual" src="/assets/images/college/facial-recognition/image-vector.jpg" alt="Screenshot of facial recognition code">
+                <div class="text">
+                    <p>For my final project in <i>MATH 214: Applied Linear Algebra</i>, I worked in a group of three students to create a computer vision program in MATLAB. The program uses singular value decomposition and eigenfaces to identify the same person's face in different images. It's a basic implementation of facial recognition. I played a large part in designing and coding our algorithm.</p>
+                    <ul class="unstyled">
+                        <li><a href="/assets/files/college/facial-recognition/facial-recognition-poster.pdf">View our poster</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="heartbeat-simulator" class="detail">
+                <h2 class="title">Heartbeat Simulator</h2>
+                <iframe class="visual" src="https://www.youtube.com/embed/ENVHv-30zDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">
+                    <p>During the summer of 2019, a friend of mine asked for help on a project he was working on for his research lab. The lab researches stem cells and had requested that he build a machine to simulate a heartbeat.</p>
+                    <p>A similar machine had been made previously, but it was disassembled and had no schematics or documentation. Our starting point was a box of parts. I took inventory of the parts, learned about what they're typically used for, and then designed a new circuit using the components we had. The circuit is a dual h-bridge that has four input pins and drives a stepper motor. To control this circuit, I programmed an Arduino with several basic commands that can be used to position the machine and simulate a heartbeat.</p>
+                    <ul class="unstyled">
+                        <li><a href="https://github.com/joezawisa/heartbeat">View the code</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="light-follower" class="detail">
+                <h2 class="title">Light Follower</h2>
+                <iframe class="visual" src="https://www.youtube.com/embed/17DCCSdsBnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">
+                    <p>I enjoy working with hardware so I can see the results of the code I write. In <i>EECS 373: Introduction to embedded systems</i>, I was originally planning to build a self-sustaining aquarium as my final project. However, had to begin learning remotely halfway through the semester due to the COVID-19 pandemic. The course staff shipped robot kits to each student so we could each complete the final project from home.</p>
+                    <p>The robot's objective is to follow a light source while avoiding obstacles in its path. It was built with an STM32 Nucleo board, a Zumo robot chassis, a servo motor, an ultrasonic sensor, and a light sensor. I programmed the robot's drivers and logic in C++.</p>
+                </div>
+            </section>
+            <section id="music-sharing-app" class="detail">
+                <h2 class="title">Music Sharing App</h2>
+                <iframe class="visual" src="https://www.youtube.com/embed/hOowjHtK3Dk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="text">
+                    <p>In my senior year, I worked with several other students on a project for <i>EECS 441: Mobile App Development for Entrpreneurs</i>. Our semester project was an iOS app for social media with a focus on music. Users can create posts as on many other social media platforms, but our app is unique because each post has a song attached to it. We also included a feature to recommend songs to users. The recommendation algorithm uses sentiment analysis to determine whether a user likes or dislikes a song they post about based on what they said in the post, and then it recommends songs with similar artists, genres, and acoustic attributes to those the user is known to enjoy.</p>
+                    <p>I was the front-end sub-team manager for this project. While a good portion of my work was designing the app's user interface and writing Swift code, I also managed two students who were on the front-end sub-team with me. Duties as a sub-team manager included meeting with other sub-team managers, coordinating my own sub-team, and tracking our progress in an agile development board. Toward the end of the project, I also contributed to the comprehensive documentation on our project's GitHub Wiki.</p>
+                    <ul class="unstyled">
+                        <li><a href="https://github.com/UM-EECS-441/musicsharingnetwork">View our code</a></li>
+                        <li><a href="https://github.com/UM-EECS-441/musicsharingnetwork/wiki">View our documentation</a></li>
+                        <li><a href="https://trello.com/b/KqzTAS9v/music-sharing-network">View our agile board</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=hOowjHtK3Dk">View our demo video</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://github.com/joezawisa"><img src="/assets/images/GitHub-Mark-120px-plus.png"></a>
+            <a href="https://www.linkedin.com/in/joseph-zawisa/"><img src="/assets/images/LI-In-Bug.png"></a>
+            <p>Copyright &copy; Joseph Zawisa 2021</p>
+        </footer>
+    </body>
+</html>
